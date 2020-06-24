@@ -1,0 +1,25 @@
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title" id="modal-basic-title">Uploading {{files.length}} file(s)...</h5>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div *ngIf="isShowDetailUploadInfo" class="modal-body">
+    <div class="files-list">
+      <div class="single-file" *ngFor="let file of files; let i = index">
+        <img src="assets/img/dnd/ic-file.svg" width="45px" alt="file">
+        <div class="info">
+          <h4 class="name">
+            {{ file?.name }}
+          </h4>
+          <p class="size">
+            {{ formatBytes(file?.size) }}
+          </p>
+          <app-progress [progress]="file?.progress"></app-progress>
+        </div>
+        <img src="assets/img/dnd/ic-delete-file.svg" class="delete" width="20px" alt="file" (click)="deleteFile(i)">
+      </div>
+    </div>
+  </div>
+</ng-template>
