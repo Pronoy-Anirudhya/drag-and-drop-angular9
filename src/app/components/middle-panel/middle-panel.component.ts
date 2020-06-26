@@ -5,7 +5,7 @@ import { ProgressBarModalComponent } from 'src/app/components/progress-bar-modal
 @Component({
   selector: 'app-middle-panel',
   templateUrl: './middle-panel.component.html',
-  styleUrls: ['../../app.component.scss']
+  styleUrls: ['./middle-panel.component.scss']
 })
 
 export class MiddlePanelComponent implements OnInit {

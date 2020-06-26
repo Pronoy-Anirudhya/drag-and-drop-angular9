@@ -5,7 +5,7 @@ import { NgbModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-progress-bar-modal',
   templateUrl: './progress-bar-modal.component.html',
-  styleUrls: ['../../app.component.scss']
+  styleUrls: ['./progress-bar-modal.component.scss']
 })
 
 export class ProgressBarModalComponent implements OnInit {

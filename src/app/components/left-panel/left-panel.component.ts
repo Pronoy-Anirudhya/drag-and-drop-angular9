@@ -5,7 +5,7 @@ import { ProgressBarModalComponent } from 'src/app/components/progress-bar-modal
 @Component({
   selector: 'app-left-panel',
   templateUrl: './left-panel.component.html',
-  styleUrls: ['../../app.component.scss']
+  styleUrls: ['./left-panel.component.scss']
 })
 
 export class LeftPanelComponent implements OnInit {
